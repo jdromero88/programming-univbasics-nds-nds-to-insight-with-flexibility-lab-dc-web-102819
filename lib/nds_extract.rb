@@ -94,7 +94,7 @@ def movies_with_directors_set(source)
   i = 0
   while i < source.length do
     data = source[i]
-    dir_name = data[:director_name]
+    dir_name = data[:name]
     dir_movies = data[:movies]
     aoa_movies << movies_with_director_key(dir_name, dir_movies)
     #aoa_movies.push(movies_with_director_key(dir_name, dir_movies))
