@@ -57,9 +57,10 @@ def movies_with_director_key(name, movies_collection)
     #pp movies_collection[0]
     movie_array = movie_with_director_name(name, movies)
     i += 1
-    puts movie_with_director_name(name, movies)
+    #puts movie_with_director_name(name, movies)
   end
   #puts movies_collection
+  movie_array
 end
 
 
@@ -98,7 +99,7 @@ def movies_with_directors_set(source)
     #aoa_movies.push(movies_with_director_key(dir_name, dir_movies))
     i += 1
   end
-  algo = source[0]
+  algo = source
   #algo = source[0][:name]
   #algo = source[0][:movies]
   #algo = movies_with_director_key(director_name, director_movies)
