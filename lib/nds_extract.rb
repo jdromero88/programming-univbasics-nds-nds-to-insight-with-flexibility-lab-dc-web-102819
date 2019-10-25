@@ -101,8 +101,8 @@ def movies_with_directors_set(source)
     i += 1
   end
   #algo = source
-  algo = source[0][:name]
-  #algo = source[0][:movies]
+  #algo = source[0][:name]
+  algo = source[0][:movies]
   #algo = movies_with_director_key(director_name, director_movies)
   puts algo
 end
