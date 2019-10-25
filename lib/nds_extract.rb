@@ -90,7 +90,7 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   aoa_movies = []
   i = 0
-  while source.length do
+  while i < source.length do
     data = source[i]
     dir_name = data[:director_name]
     dir_movies = data[:movies]
@@ -98,12 +98,11 @@ def movies_with_directors_set(source)
     #aoa_movies.push(movies_with_director_key(dir_name, dir_movies))
     i += 1
   end
-  aoa_movies
-  #algo = source[0]
+  algo = source[0]
   #algo = source[0][:name]
   #algo = source[0][:movies]
   #algo = movies_with_director_key(director_name, director_movies)
-  #puts algo
+  puts algo
 end
 
 # ----------------    End of Your Code Region --------------------
