@@ -79,7 +79,7 @@ def gross_per_studio(collection)
   # total of all the worldwide_gross numbers for every movie in the input Hash
   pp collection
   new_hash_with_gross_total = {}
-  total = collection[:worldwide_gross]
+  total = collection[:worldwide_gross].to_s
   puts total
 end
 
