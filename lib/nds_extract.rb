@@ -93,8 +93,8 @@ def gross_per_studio(collection)
     }
     i += 1
   end
-  #puts total
-  puts new_hash_with_gross_total
+  puts total
+  #puts new_hash_with_gross_total
   #new_hash_with_gross_total
 end
 
