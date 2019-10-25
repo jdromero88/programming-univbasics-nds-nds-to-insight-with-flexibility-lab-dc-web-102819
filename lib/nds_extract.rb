@@ -79,9 +79,9 @@ def gross_per_studio(collection)
   # total of all the worldwide_gross numbers for every movie in the input Hash
   #pp collection
   new_hash_with_gross_total = {}
-  total = collection[:worldwide_gross].to_s
-  algo = movie_with_director_name(name, movies_collection)
-  puts algo
+  total = collection[0]
+
+  puts total
 end
 
 def movies_with_directors_set(source)
