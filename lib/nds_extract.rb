@@ -79,9 +79,12 @@ def gross_per_studio(collection)
   # total of all the worldwide_gross numbers for every movie in the input Hash
   #pp collection
   new_hash_with_gross_total = {}
-  #total = collection[0]
-  total = collection[0][:worldwide_gross]
-
+  total = collection[0]
+  #total = collection[0][:worldwide_gross]
+  i = 0
+  while i < collection.length do
+  #  total = collection[0][:worldwide_gross]
+  end
   puts total
 end
 
