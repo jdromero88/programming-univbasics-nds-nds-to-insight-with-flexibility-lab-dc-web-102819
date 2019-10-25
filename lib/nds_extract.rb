@@ -84,13 +84,13 @@ def gross_per_studio(collection)
   #studio_name = collection[0][:studio]
   i = 0
   while i < collection.length do
-  total += collection[i][:worldwide_gross]
-  studio_name = collection[i][:studio]
-  new_hash_with_gross_total = {
-    studio_name: studio_name,
-    total_sum: total
-  }
-  i += 1
+    total += collection[i][:worldwide_gross]
+    studio_name = collection[i][:studio]
+    new_hash_with_gross_total = {
+      studio_name: studio_name,
+      total_sum: total
+    }
+    i += 1
   end
   #puts total
   puts new_hash_with_gross_total
