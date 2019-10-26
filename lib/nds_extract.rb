@@ -101,7 +101,7 @@ def gross_per_studio(collection)
   #puts total
   #puts new_hash_with_gross_total
   new_hash_with_gross_total
-  pp collection
+  #pp collection
 end
 
 def movies_with_directors_set(source)
