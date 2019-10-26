@@ -89,7 +89,7 @@ def gross_per_studio(collection)
   while i < collection.length do
     studio_name = collection[i][:studio]
     while inner_count < collection.length do
-      if studio_name == collection[i][:studio]
+      if studio_name == collection[inner_count][:studio]
         total += collection[i][:worldwide_gross]
         puts "algo time #{inner_count}"
       end
