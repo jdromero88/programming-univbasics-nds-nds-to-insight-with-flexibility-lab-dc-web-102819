@@ -93,7 +93,7 @@ def gross_per_studio(collection)
         #puts "algo time #{inner_count}"
       end
       inner_count += 1
-      new_hash_with_gross_total[:"#{studio_name}"] = total
+      new_hash_with_gross_total["#{studio_name}"] = total
     end
 
     i += 1
