@@ -108,7 +108,7 @@ def gross_per_studio(collection)
     if new_hash_with_gross_total[inner_nds[:studio]]
       new_hash_with_gross_total[inner_nds[:studio]] += inner_nds[:worldwide_gross]
     else
-      total = collection[i][:worldwide_gross]
+      new_hash_with_gross_total[inner_nds[:studio]] = inner_nds[:worldwide_gross]
     end
     i += 1
   end
