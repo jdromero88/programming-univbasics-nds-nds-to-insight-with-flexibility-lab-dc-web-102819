@@ -95,7 +95,7 @@ def gross_per_studio(collection)
         #array_total[inner_count] << total
         #puts "algo time #{inner_count}"
       end
-      new_hash_with_gross_total = inner_hash{[inner_studio_name] = total}
+      new_hash_with_gross_total[inner_studio_name] = total
       inner_count += 1
     end
 
