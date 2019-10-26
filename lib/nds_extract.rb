@@ -87,7 +87,7 @@ def gross_per_studio(collection)
   new_hash_with_gross_total = {}
   inner_count = 0
   while i < collection.length do
-    inner_nds = collection[i]
+    #inner_nds = collection[i]
     #studio_name = collection[i][:studio]
     #inner_studio_name = ""
     #while inner_count < collection.length do
@@ -105,10 +105,10 @@ def gross_per_studio(collection)
       #new_hash_with_gross_total[inner_studio_name] = total
     #  inner_count += 1
     #end
-    if new_hash_with_gross_total[inner_nds[:studio]]
-      total += collection[inner_count][:worldwide_gross]
+    if new_hash_with_gross_total[i[:studio]]
+      total += collection[i][:worldwide_gross]
     else
-      total = collection[inner_count][:worldwide_gross]
+      total = collection[i][:worldwide_gross]
     end
     i += 1
   end
