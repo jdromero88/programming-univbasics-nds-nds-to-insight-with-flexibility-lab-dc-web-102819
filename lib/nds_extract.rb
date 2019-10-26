@@ -87,8 +87,7 @@ def gross_per_studio(collection)
   new_hash_with_gross_total = {}
   inner_count = 0
   while i < collection.length do
-    #studio_name = collection[i][:studio]
-    movies = collection[i]
+    studio_name = collection[i][:studio]
     inner_studio_name = ""
     while inner_count < collection.length do
       if studio_name == collection[inner_count][:studio]
