@@ -91,15 +91,16 @@ def gross_per_studio(collection)
     while inner_count < collection.length do
       if studio_name == collection[inner_count][:studio]
         total += collection[inner_count][:worldwide_gross]
-        puts "algo time #{inner_count}"
+        #puts "algo time #{inner_count}"
       end
       inner_count += 1
     end
+    new_hash_with_gross_total[studio_name, total]
     i += 1
   end
-  puts total
+  #puts total
   #puts new_hash_with_gross_total
-  #new_hash_with_gross_total
+  new_hash_with_gross_total
   pp collection
 end
 
