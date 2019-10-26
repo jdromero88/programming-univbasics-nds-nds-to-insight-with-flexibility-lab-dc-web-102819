@@ -94,7 +94,7 @@ def gross_per_studio(collection)
       end
       inner_count += 1
 
-      new_hash_with_gross_total[collection[inner_count][:studio]] = total
+      new_hash_with_gross_total[collection[inner_count][:studio]] = total[inner_count]
     end
 
     i += 1
