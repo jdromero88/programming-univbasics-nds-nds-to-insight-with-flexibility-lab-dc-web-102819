@@ -87,7 +87,7 @@ def gross_per_studio(collection)
   array_total = []
   inner_count = 0
   while i < collection.length do
-    studio_name = collection[inner_count][:studio]
+    studio_name = collection[i][:studio]
     while inner_count < collection.length do
       if studio_name == collection[inner_count][:studio]
         total = collection[inner_count][:worldwide_gross]
